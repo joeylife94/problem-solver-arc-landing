@@ -49,6 +49,16 @@ Safe for external portfolio use.
 - AI prompt generation flow
 - Dashboard code
 
+## Architecture Bullets
+- `run_scan` orchestrates a six-step pipeline: config/load, exchange-rate initialization, Korean wholesale collection, multi-country matching, margin analysis, then report/output persistence in DB and files.
+- Product discovery is composed as async fan-out by country/platform using `CountryManager` and `UniversalScraper.from_config`, with semaphore-limited concurrency and per-result enrichment such as `price_usd` and match confidence.
+- Financial evaluation is separated into services: currency conversion feeds `MarginCalculator` logistics/customs/fee rules, and `ReportGenerator` emits JSON comparison and AI prompt artifacts under `output/`.
+
+## Proof Statement Set
+E-Commerce Scanner is a Python workflow that collects Korean wholesale product data and compares it against overseas marketplace prices to evaluate margin potential.  
+The current repository clearly demonstrates a runnable orchestration path with scrapers, matching, margin calculation, report generation, and sample output artifacts in `output/`.  
+Real business performance, live-run reliability, and externally validated outcome claims remain TBD in this repository snapshot.
+
 ---
 
 ## 2. SeoulGyeol Skin Lab
