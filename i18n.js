@@ -91,7 +91,7 @@
       'hero-btn-projects': 'View Featured Project',
       'hero-btn-contact': 'Contact',
 
-      'trust-name': 'Dongyun Jeon · ProblemSolverArc',
+      'trust-name': 'Dongyuon Jeon · ProblemSolverArc',
       'trust-desc': 'I design and build operational workflows, internal tools, and backend-focused MVPs. From scope definition to verifiable deliverables — structured approach throughout.',
 
       'featured-eyebrow': 'Featured Project',
@@ -162,7 +162,7 @@
       'hero-btn-projects': '代表プロジェクトを見る',
       'hero-btn-contact': 'お問い合わせ',
 
-      'trust-name': 'Dongyun Jeon · ProblemSolverArc',
+      'trust-name': 'Dongyuon Jeon · ProblemSolverArc',
       'trust-desc': '運用ワークフロー、社内ツール、バックエンド中心のMVPを設計・実装します。スコープ定義から検証可能な成果物まで、構造的にアプローチします。',
 
       'featured-eyebrow': '代表プロジェクト',
